@@ -1,56 +1,40 @@
 //Pendo Scripts
 
-(function(apiKey){
-    (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
-    v=['initialize','identify','updateOptions','pageLoad','trackEvents'];for(w=0,x=v.length;w<x;++w)(function(m){
-        o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
-        y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
-        z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
-        //Call this whenever information about your visitors becomes available
-        //Please use Strings, Numbers, or Bools for value types.
-// pendo.isReady(console.log("is ready"))
-        pendo.initialize({
-//             disablecookies: true,
-            visitor: {
-                id:  'drift-visitor',
-                email: 'email@email.com',
-                name: 'my name',
-                emailid: 'visitor-1@pendo.io',   // Required if user is logged in
-                role: 'Admin',
-                return_url: 'https://www.google.com',
-                
-                //drift info
-                
-                userId: 'drift-visitor',
-                
-                
-                //enabledIntegrationVisitors: ['microsoft', 'enforce_modules','blackberry_modules'],
-                //role: ["Guardian"]
-                // email:        // Optional
-                // role:         // Optional
-                // You can add any additional visitor level key-values here,
-                // as long as it's not one of the above reserved names.
-            },
-            account: {
-                id: "drift-account"     ,     // Highly recommended
-                accountfield:  '100',
-                boolean_flag: false
-                // name:         // Optional
-                // planLevel:    // Optional
-                // planPrice:    // Optional
-                // creationDate: // Optional
-                // You can add any additional account level key-values here,
-                // as long as it's not one of the above reserved names.
-            },
-      	 //   parentAccount: {
-      	  //    id:  'Parent Account 4',
-      	  //     name:   "enabled integration test"      // Optional
-      	      // You can add any additional master account level
-      	      // key-values here.
-      	    //}
-        });
-      })('fd2507d5-0da6-47c2-5189-f087c06e6922');
 
+    (function(apiKey){
+        (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+        v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
+            o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+            y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
+            z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+
+            // Call this whenever information about your visitors becomes available
+            // Please use Strings, Numbers, or Bools for value types.
+            pendo.initialize({
+                visitor: {
+                    id:              'VISITOR-UNIQUE-ID'   // Required if user is logged in
+                    // email:        // Recommended if using Pendo Feedback, or NPS Email
+                    // full_name:    // Recommended if using Pendo Feedback
+                    // role:         // Optional
+
+                    // You can add any additional visitor level key-values here,
+                    // as long as it's not one of the above reserved names.
+                },
+
+                account: {
+                    id:           'ACCOUNT-UNIQUE-ID' // Highly recommended
+                    // name:         // Optional
+                    // is_paying:    // Recommended if using Pendo Feedback
+                    // monthly_value:// Recommended if using Pendo Feedback
+                    // planLevel:    // Optional
+                    // planPrice:    // Optional
+                    // creationDate: // Optional
+
+                    // You can add any additional account level key-values here,
+                    // as long as it's not one of the above reserved names.
+                }
+            });
+    })('89dbca8b-5a34-47ee-6216-a46a42cc5742');
 
 //EU Pendo Install
 
