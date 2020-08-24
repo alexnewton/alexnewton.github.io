@@ -24,9 +24,9 @@
                 },
 
                 account: {
-                    id:           account_id,
-                    name: account_name,
-                    industry: account_industry,
+                    id:           'account_id',
+                    name: 'company_name',
+                    industry: 'account_industry',
                     // Highly recommended
                     // name:         // Optional
                     // is_paying:    // Recommended if using Pendo Feedback
