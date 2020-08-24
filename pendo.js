@@ -15,17 +15,23 @@
                     id: user_id,
                     first_name: first_name,
                     last_name: last_name,
-                    email: user_email // Required if user is logged in
-                    // email:        // Recommended if using Pendo Feedback, or NPS Email
-                    // full_name:    // Recommended if using Pendo Feedback
-                    // role:         // Optional
+                    email: user_email,
+                    permissionLevel: user_permissions,
+                    role: user_role
 
                     // You can add any additional visitor level key-values here,
                     // as long as it's not one of the above reserved names.
                 },
 
                 account: {
-                    id:           'ACCOUNT-UNIQUE-ID' // Highly recommended
+                    id:           account_id,
+                    name: account_name,
+                    industry: account_industry,
+                    creationDate: creation_date,
+                    contractStartDate: start_date,
+                    renewalDate: renewal_date,
+                    contractValue: contract_value 
+                    // Highly recommended
                     // name:         // Optional
                     // is_paying:    // Recommended if using Pendo Feedback
                     // monthly_value:// Recommended if using Pendo Feedback
