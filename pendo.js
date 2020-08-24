@@ -12,7 +12,6 @@
             // Please use Strings, Numbers, or Bools for value types.
             pendo.initialize({
                 visitor: {
-                    id: user_id,
                     first_name: first_name,
                     last_name: last_name,
                     email: user_email,
