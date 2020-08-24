@@ -12,11 +12,12 @@
             // Please use Strings, Numbers, or Bools for value types.
             pendo.initialize({
                 visitor: {
-                    first_name: first_name,
-                    last_name: last_name,
-                    email: user_email,
-                    permissionLevel: user_permissions,
-                    role: user_role
+                    id: 'example_id',
+                    email: 'alex@example.com',
+                    name: 'my name',
+                    emailid: 'example_01@pendo.io',
+                    role: 'Admin',
+                    return_url: 'htpps//www.google.com'
 
                     // You can add any additional visitor level key-values here,
                     // as long as it's not one of the above reserved names.
@@ -26,10 +27,6 @@
                     id:           account_id,
                     name: account_name,
                     industry: account_industry,
-                    creationDate: creation_date,
-                    contractStartDate: start_date,
-                    renewalDate: renewal_date,
-                    contractValue: contract_value 
                     // Highly recommended
                     // name:         // Optional
                     // is_paying:    // Recommended if using Pendo Feedback
