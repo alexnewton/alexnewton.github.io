@@ -116,7 +116,12 @@
 // drift.load('268z87akt9cr');
 // </script>
 
-
+<script>
+drift.identify('example_id', {
+  email: 'alex@example.com',
+  name: 'my name',
+});
+</script>
 
 
 // <script>
