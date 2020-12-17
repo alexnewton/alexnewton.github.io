@@ -116,6 +116,9 @@
 }();
 drift.SNIPPET_VERSION = '0.3.1';
 drift.load('drtnxw3562t3');
+drift.identify('example_id', {
+  name: 'Test Name'
+});
 </script>
 <!-- End of Async Drift Code -->
 
