@@ -33,8 +33,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }}();
 </script>
  <!-- Pendo snippet for annotateUrl testing -->
- <script> 
-  function annotateUrl(){
+ <script>
+function annotateUrl(){
   var toDrop = ['*'];
   var toAdd = { page: 'annotateTest' };
   return {
@@ -42,18 +42,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       include: toAdd
   };
 }
-
-      (function(apiKey){
-        (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
-        v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
-            o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
-            y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
-            z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
-
-            // Call this whenever information about your visitors becomes available
-            // Please use Strings, Numbers, or Bools for value types.
-            pendo.initialize({
-                visitor: {
+    (function (apiKey) {
+        (function (p, e, n, d, o) {
+            var v, w, x, y, z; o = p[d] = p[d] || {}; o._q = [];
+            v = ['initialize', 'identify', 'updateOptions', 'pageLoad']; for (w = 0, x = v.length; w < x; ++w)(function (m) {
+                o[m] = o[m] || function () { o._q[m === v[0] ? 'unshift' : 'push']([m].concat([].slice.call(arguments, 0))); };
+            })(v[w]);
+            y = e.createElement(n); y.async = !0; y.src = 'https://cdn.pendo.io/agent/static/' + apiKey + '/pendo.js';
+            z = e.getElementsByTagName(n)[0]; z.parentNode.insertBefore(y, z);
+        })(window, document, 'script', 'pendo');
+        // Call this whenever information about your visitors becomes available
+        // Please use Strings, Numbers, or Bools for value types.
+        pendo.initialize({
+            visitor: {
                     id: 'example_id',
                     email: 'alex@example.com',
                     name: 'my name',
@@ -79,10 +80,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                     // You can add any additional account level key-values here,
                     // as long as it's not one of the above reserved names.
-                }
-            });
+                },
+            annotateUrl: annotateUrl
+        });
     })('89dbca8b-5a34-47ee-6216-a46a42cc5742');
-  </script>
+</script>
 </head>
 
 <body id="page-top">
