@@ -12006,3 +12006,9 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
+/* CSS for Testing Below */
+.row.justify-content-center {
+  height: 50vh;
+  overflow-y: scroll;
+  
+}
