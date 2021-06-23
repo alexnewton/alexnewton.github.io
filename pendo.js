@@ -92,10 +92,11 @@
 
 // <script>
 
- pendo.track("clientside", {
-   foo: "bar",
-   event_sent: "Yes"
- });
+// pendo.track("NAME", {
+//   PROPERTY1: "Replace with Function Name",
+//   PROPERTY2: "PROPERTY2VALUE",
+//   PROPERTYN: "PROPERTYNVALUE"
+// });
 // </script>
 
 // <!--Intercom Install-->
