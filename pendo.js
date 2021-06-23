@@ -92,11 +92,9 @@
 
 // <script>
 
-if visitorID != "xyz" {
  pendo.track("clientside", {
    foo: "bar",
    event_sent: "Yes"
- }
  });
 // </script>
 
