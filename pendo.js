@@ -13,7 +13,7 @@
             pendo.initialize({
                 visitor: {
                     id: 'example_id',
-                    email: 'alex@example.com',
+                    email: 'alex.newton@pendo.io',
                     name: 'my name',
                     emailid: 'example_01@pendo.io',
                     role: 'Admin',
