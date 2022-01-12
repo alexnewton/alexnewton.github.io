@@ -17,7 +17,16 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <script>
+  function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+}
 
+var myInt = getRandomInt(0, 1000);
+var myString = myInt.toString();
+</script>
 </head>
 
 <body id="page-top">
