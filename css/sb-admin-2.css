@@ -12012,3 +12012,25 @@ body.sidebar-toggled footer.sticky-footer {
   overflow-y: scroll;
   
 }
+/* CSS For Pendo Testing */
+
+#pendo-right-caret-345c9a56::before {
+    content: ''!important;
+    position: absolute!important;
+    top: 4px!important;
+    left: 8px!important;
+    border-left: 6px solid #6A6C75!important;
+    border-top: 6px solid transparent!important;
+    border-bottom: 6px solid transparent!important;
+    }
+#pendo-right-caret-345c9a56::after {
+    content: ''!important;
+    position: absolute!important;
+    left: 7px!important;
+    top: 5px!important;
+    border-left: 5px solid #fff!important;
+    border-top: 5px solid transparent!important;
+    border-bottom: 5px solid transparent!important;
+    border-left-color: #FFFFFF!important;
+    }
+  
