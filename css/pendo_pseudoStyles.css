@@ -39,7 +39,7 @@
 /// Note: Link Hover Color, Weight, and Text Decoration is UI Configurable
 */
 
-._pendo-text-link
+._pendo-text-link:hover
 {
     font-weight: 200!important;
     text-decoration: underline!important;
