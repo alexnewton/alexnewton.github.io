@@ -155,19 +155,18 @@ button#pendo-a11y-list-item-button-block > .bb-text:hover {
 }
 
 /* Resource Center Notification Bubble Animation */
+@keyframes pulse { 0% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(1.6) } }
 
-.pendo-resource-center-badge-notification-bubble::before {
-    content: "";
+.pendo-resource-center-badge-notification-bubble::before { content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 180, 120); /* UI Configurable */
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgb(236, 32, 89);
     border-radius: 100%;
     z-index: -1;
     animation: pulse 2s infinite;
-    will-change: transform;
+    will-change: transform; }
+
 }
 
 
