@@ -21,6 +21,179 @@ frame-ancestors app.pendo.io; frame-src app.pendo.io;">
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <style>
+    /* GUIDES */
+
+
+
+/* Guide Button Hover Styling 
+/// Note: All Button Hover Styling (background, border color, color, font-weight) is UI Configurable
+*/
+
+._pendo-button-primaryButton:hover
+{
+    background: rgba(0, 41, 122, 1)!important; 
+    border: 1px solid #00297A!important; 
+    color: #FFFFFF!important;
+    font-weight: 500!important;
+}
+
+._pendo-button-secondaryButton:hover
+{
+    background: rgba(242, 245, 255, 1)!important; 
+    border: 1px solid #A7B5EC!important;
+    color: #1662DD!important;
+    font-weight: 500!important;
+}
+
+._pendo-button-tertiaryButton:hover
+{
+    background: rgba(232, 232, 232, 1)!important; 
+    border: 1px solid #E8E8E8!important;
+    color: #212126!important;
+    font-weight: 500!important;
+}
+
+._pendo-close-guide:hover
+{
+    color: #1D1D21!important;
+}
+
+/* Text Link Hover Styling 
+/// Note: Link Hover Color, Weight, and Text Decoration is UI Configurable
+*/
+
+._pendo-text-link
+{
+    font-weight: 200!important;
+    text-decoration: underline!important;
+    color: #1662DD!important;
+}
+
+/* Yes/No Poll Button Styling 
+/// Note: All Yes/No Poll Button Styling(background, border color, color, font-weight) is UI Configurable
+*/
+
+._pendo-yes-no-poll-yes-button:hover {
+    background: rgba(0, 41, 122, 1)!important;
+    border: 1px solid #00297A!important;
+    color: #FFFFFF!important;
+    font-weight: 500!important;
+}
+
+._pendo-yes-no-poll-no-button:hover {
+    background: rgba(0, 41, 122, 1)!important;
+    border: 1px solid #00297A!important;
+    color: #FFFFFF!important;
+    font-weight: 500!important; 
+}
+
+/* Number Scale Styling 
+/// Note: All Number Scale Styling(background, color) is UI Configurable
+*/
+
+.pendo-radio[class*="_pendo-number-scale-poll"]:hover {
+    background: rgba(242, 245, 255, 1)!important; 
+    color: #1662DD!important;
+}
+
+/* Open Text Poll Focus */
+
+._pendo-open-text-poll-input:focus {
+    outline: none!important;
+    box-shadow: #00000080 0px 0px 2px 0px!important;
+}
+
+
+
+
+
+/* RESOURCE CENTER */
+
+
+/* Resource Center Caret Styling
+/// Note: UI configurable options noted inline
+*/
+
+._pendo-resource-center-left-caret::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0px !important;
+    right: 0px !important;
+    border-right: 6px solid #8C8C96 !important; /* Color UI Configurable */
+        border-right-color: rgb(140, 140, 150);
+    border-top: 6px solid transparent !important;
+    border-bottom: 6px solid transparent !important;
+    border-right-color: #8C8C96 !important; /* Color UI Configurable */
+}
+
+._pendo-resource-center-left-caret::after {
+    content: '' !important;
+    position: absolute !important;
+    right: -1px !important;
+    top: 1px !important;
+    border-right: 5px solid #fff !important; 
+        border-right-color: rgb(255, 255, 255);
+    border-top: 5px solid transparent !important;
+    border-bottom: 5px solid transparent !important;
+    border-right-color: #FFFFFF !important; 
+}
+
+._pendo-resource-center-right-caret::before {
+
+    content: '' !important;
+    position: absolute !important;
+    top: 0px !important;
+    left: 0px !important;
+    border-left: 6px solid #8C8C96 !important; /* Color UI Configurable */
+        border-left-color: rgb(140, 140, 150);
+    border-top: 6px solid transparent !important;
+    border-bottom: 6px solid transparent !important;
+    border-left-color: #8C8C96 !important; /* Color UI Configurable */
+
+}
+
+._pendo-resource-center-right-caret::after {
+    content: '' !important;
+    position: absolute !important;
+    left: -1px !important;
+    top: 1px !important;
+    border-left: 5px solid #fff !important; 
+        border-left-color: rgb(255, 255, 255);
+    border-top: 5px solid transparent !important;
+    border-bottom: 5px solid transparent !important;
+    border-left-color: #FFFFFF !important; 
+}
+
+/* Resource Center Guide List / Onboarding Module Guide Button Styling */
+
+button#pendo-a11y-list-item-button-block:hover {
+    text-decoration: underline!important; /* UI Configurable Underline or None */
+    color: #1662DD !important; /* UI Configurable */
+}
+
+button#pendo-a11y-list-item-button-block > .bb-text:hover {
+    color: #1662DD!important; /* UI Configurable */
+    font-weight: 200!important; /* UI Configurable 100-900 */
+    cursor: pointer!important;
+}
+
+/* Resource Center Notification Bubble Animation */
+
+.pendo-resource-center-badge-notification-bubble::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 180, 120); /* UI Configurable */
+    border-radius: 100%;
+    z-index: -1;
+    animation: pulse 2s infinite;
+    will-change: transform;
+}
+  </style>
 </head>
 
 <body class="bg-gradient-primary">
