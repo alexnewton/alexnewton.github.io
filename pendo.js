@@ -17,7 +17,7 @@
                     name: 'my name',
                     emailid: 'example_01@pendo.io',
                     role: 'Admin',
-                    return_url: 'htpps//www.google.com',
+                    return_url: 'https//www.google.com',
                     segmentTest: myInt,
                     randomString: myString
 
