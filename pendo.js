@@ -12,6 +12,7 @@
             // Please use Strings, Numbers, or Bools for value types.
             pendo.initialize({
                 visitor: {
+                    disableGuidePseudoStyles: true,
                     id: 'example_id',
                     email: 'alex.newton@pendo.io',
                     name: 'my name',
