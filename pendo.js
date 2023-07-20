@@ -32,7 +32,7 @@
                     industry: 'account_industry',
                     // Highly recommended
                     // name:         // Optional
-                    // is_paying:    // Recommended if using Pendo Feedback
+                    is_paying:    True
                     // monthly_value:// Recommended if using Pendo Feedback
                     // planLevel:    // Optional
                     // planPrice:    // Optional
