@@ -30,7 +30,7 @@
                     id:           'account_id',
                     name: 'company_name',
                     industry: 'account_industry',
-                    is_paying: "True"
+                    is_paying: true
                     // Highly recommended
                     // name:         // Optional
                     // monthly_value:// Recommended if using Pendo Feedback
